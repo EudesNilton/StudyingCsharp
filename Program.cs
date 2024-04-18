@@ -1,6 +1,25 @@
 ﻿using Csharp.Models;
 
-//cast - casting
+//OPERADORES
+
+int quantidadeEstoque = 10;
+int quantidadeCompra = 4;
+bool possivelVenda = quantidadeEstoque >+ quantidadeCompra;
+
+Console.WriteLine($"Quantidade em estoque: {quantidadeEstoque}");
+Console.WriteLine($"Quantidade compra: {quantidadeCompra}");
+Console.WriteLine($"É possivel realizar a venda? {possivelVenda}");
+
+if(possivelVenda)
+{
+    Console.WriteLine("Venda realizada");
+}
+else
+{
+    Console.WriteLine("Desculpe. Não temos a quantidade em estoque.");
+}
+
+//CAST - CASTING 
 
 int z = Convert.ToInt32("4"); //convertendo uma string para um int com Convert
 Console.WriteLine(z);
@@ -28,7 +47,7 @@ int.TryParse(h, out int j);
 Console.WriteLine(j);
 
 
-//atribuição de valor
+//ATRIBUIÇÃO DE VALOR
 
 int a = 10;
 int b = 20;
@@ -48,7 +67,7 @@ DateTime dataAtual = DateTime.Now.AddDays(5);
 Console.WriteLine(dataAtual.ToString("dd/MM/yyyy HH:mm"));
 
 
-//variaveis
+//VARIAVEIS
 
 string apresentacao = "Olá, seja bem vindo";
 int quantidade = 1;
@@ -63,8 +82,8 @@ Console.WriteLine("valor da variável preco: " + preco);
 Console.WriteLine("valor da variável condicao: " + condicao);
 
 
-//sintaxe
-// criando dados e utilizando os dados
+//SINTAXE
+//CRIANDO E UTILIZANDO DADOS
 Pessoa p = new Pessoa();
 
 p.Nome = "Eudes";

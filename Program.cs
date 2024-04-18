@@ -1,5 +1,47 @@
 ﻿using Csharp.Models;
 
+//cast - casting
+
+int z = Convert.ToInt32("4"); //convertendo uma string para um int com Convert
+Console.WriteLine(z);
+
+int y = int.Parse("90"); //convertendo com Parse
+Console.WriteLine(y);
+
+//convert retorna zero quando o valor é nulo
+//parse retorna erro quando o valor é nulo
+
+//convertendo para string
+int inteiro = 5;
+string x = inteiro.ToString();//fazer o caminho de int para string não se pode usar Parse e o Convert é redundante 
+Console.WriteLine(x);
+
+//casting implicito 
+int f = 5;
+double i = f; //nesse caso o int cabe dentro do double
+Console.WriteLine(f);
+
+//convertendo de maneira segura
+string h = "15-";
+int.TryParse(h, out int j);
+
+Console.WriteLine(j);
+
+
+//atribuição de valor
+
+int a = 10;
+int b = 20;
+int c = a + b;
+
+c = c + 5;
+
+//vai pegar a propria variavel e somar com o valor passado apos a igualdade
+c += 5; 
+
+Console.WriteLine(c);
+
+
 //DateTime
 
 DateTime dataAtual = DateTime.Now.AddDays(5);

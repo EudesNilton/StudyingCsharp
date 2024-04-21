@@ -1,22 +1,77 @@
 ﻿using Csharp.Models;
 
+//OPERADORES ARITMÉTICOS E A CLASSE MATH
+Calculadora calc = new Calculadora();
+
+calc.Somar(10, 26);
+calc.Subtrair(20, 12);
+calc.Multiplicar(3, 20);
+calc.Dividir(24, 2);
+calc.Potencia(3, 3);
+calc.Seno(30);
+calc.Coseno(30);
+calc.Tangente(30);
+
+//incrementando
+
+int numero = 10;
+Console.WriteLine(numero);
+numero = numero + 1;
+Console.WriteLine(numero);
+numero++;
+Console.WriteLine(numero);
+
+//decremento
+numero--;
+Console.WriteLine(numero);
+
+//raiz quadrada
+
+calc.RaizQuadrada(9);
+
 //OPERADORES
 
 int quantidadeEstoque = 10;
 int quantidadeCompra = 4;
-bool possivelVenda = quantidadeEstoque >+ quantidadeCompra;
+bool possivelVenda = quantidadeCompra > 0 && quantidadeEstoque >+ quantidadeCompra;
 
 Console.WriteLine($"Quantidade em estoque: {quantidadeEstoque}");
 Console.WriteLine($"Quantidade compra: {quantidadeCompra}");
 Console.WriteLine($"É possivel realizar a venda? {possivelVenda}");
 
-if(possivelVenda)
+
+if (quantidadeCompra == 0)
+{
+    Console.WriteLine("Venda invalida");
+}
+//IF ANINHADO adicionar uma condição de verificação a mais
+else if (possivelVenda)
 {
     Console.WriteLine("Venda realizada");
 }
 else
 {
     Console.WriteLine("Desculpe. Não temos a quantidade em estoque.");
+}
+
+//SWITCH CASE
+
+Console.WriteLine("Digite uma letra");
+string letra = Console.ReadLine();
+
+switch (letra)
+{
+    case "a":
+    case "e":
+    case "i":
+    case "o":
+    case "u":
+        Console.WriteLine("Vogal");
+        break;
+    
+    default:
+        Console.WriteLine("Não é uma vogal");
+        break;
 }
 
 //CAST - CASTING 

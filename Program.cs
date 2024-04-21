@@ -1,4 +1,85 @@
-﻿using Csharp.Models;
+﻿using System.ComponentModel;
+using Csharp.Models;
+
+//MENU INTERATIVO
+string opcao;
+bool exibirMenu = true;
+
+while(exibirMenu)
+{
+    Console.Clear();
+    Console.WriteLine("Digite a sua opção:");
+    Console.WriteLine("1 - cadastrar cliente");
+    Console.WriteLine("2 - buscar cliente");
+    Console.WriteLine("3 - apagar cliente");
+    Console.WriteLine("4 - Encerrar");
+
+    opcao = Console.ReadLine();
+
+    switch(opcao)
+    {
+        case "1":
+            Console.WriteLine("Cadastro de cliente");
+            break;
+        
+        case "2":
+            Console.WriteLine("Busca de cliente");
+            break;
+        case "3":
+            Console.WriteLine("Apagar cliente");
+            break;
+        case "4":
+            Console.WriteLine("Encerarar");
+            exibirMenu = false;
+            //Environment.Exit(0); vai parar todo o codigo abaixo
+            break;
+        default:
+            Console.WriteLine("Opção invalida");
+            break;
+    }
+
+}
+
+
+
+//LAÇOS DE REPETIÇÃO
+//DO WHILE
+int soma = 0, number = 0;
+do
+{
+    Console.WriteLine("Digite um numero (0 para parar)");
+    number = Convert.ToInt32(Console.ReadLine());
+
+    soma += number;
+
+} while(number != 0); //precisa ser falso para parar 
+
+Console.WriteLine($"Total da soma dos numeros digitados é: {soma}");
+
+//WHILE (cuidado com o loop infinito)
+int nume = 5;
+int cont = 0;
+
+while(cont <= 10)
+{
+    Console.WriteLine($"{cont + 1}º {nume} x {cont} = {nume * cont}");
+    cont++;
+
+    if(cont == 5)
+    {
+        break; //para quebrar o loop
+    }
+}
+
+//FOR 
+int num = 10;
+
+for(int contador = 0; contador <= 10; contador++)
+//for(declaração da variavel; condição de parada; e enquanto o contador será considerado)
+{
+    Console.WriteLine($"{num} x {contador} = {num * contador}");
+}
+
 
 //OPERADORES ARITMÉTICOS E A CLASSE MATH
 Calculadora calc = new Calculadora();

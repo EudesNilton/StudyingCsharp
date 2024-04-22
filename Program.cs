@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using Csharp.Models;
 
+Console.WriteLine("Olá mundo");
 //MENU INTERATIVO
 string opcao;
 bool exibirMenu = true;

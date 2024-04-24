@@ -1,10 +1,61 @@
-﻿using System.ComponentModel;
+﻿
+using System.ComponentModel;
 using Csharp.Models;
 
-Console.WriteLine("Olá mundo");
+
+//Lista
+
+List<string> listaString = new List<string>();
+listaString.Add("DF");
+listaString.Add("BA");
+listaString.Add("RJ");
+
+for(int contador = 0; contador < listaString.Count; contador++)
+{
+    Console.WriteLine($"Posição n{contador} - {listaString[contador]}");
+}
+
+int contadorForeach = 0;
+foreach(string item in listaString)
+{
+    Console.WriteLine($"Posição n {contadorForeach} - {item}");
+    contadorForeach++;
+}
+
+
+//ARRAY
+
+int[] arrayInteiros = new int[4];
+arrayInteiros[0]= 72;
+arrayInteiros[1] = 35;
+arrayInteiros[2] = 32;
+arrayInteiros[3] = 1;
+
+//copiando para um novo array
+int[] arrayInteirosDobrado = new int[arrayInteiros.Length * 2];
+Array.Copy(arrayInteiros, arrayInteirosDobrado, arrayInteiros.Length);
+
+//array com for
+for(int contador = 0; contador < arrayInteiros.Length; contador++)
+{
+    Console.WriteLine($"Posição n{contador} - {arrayInteiros[contador]}"
+    );
+}
+
+//aumentar ou diminuir o tamanho de um array
+Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2);
+
+
+//array com foreach
+foreach(int valor in arrayInteiros)
+{
+    Console.WriteLine(valor);
+}
+
+
 //MENU INTERATIVO
 string opcao;
-bool exibirMenu = true;
+bool exibirMenu = false;
 
 while(exibirMenu)
 {

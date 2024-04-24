@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP Amanda\\Desktop\\Nova pasta\\Csharp\\StudyingCsharp\\Csharp.csproj": {}
+    "c:\\Users\\HP Amanda\\Desktop\\Nova pasta\\Csharp\\StudyingCsharp\\Csharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP Amanda\\Desktop\\Nova pasta\\Csharp\\StudyingCsharp\\Csharp.csproj": {
+    "c:\\Users\\HP Amanda\\Desktop\\Nova pasta\\Csharp\\StudyingCsharp\\Csharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP Amanda\\Desktop\\Nova pasta\\Csharp\\StudyingCsharp\\Csharp.csproj",
+        "projectUniqueName": "c:\\Users\\HP Amanda\\Desktop\\Nova pasta\\Csharp\\StudyingCsharp\\Csharp.csproj",
         "projectName": "Csharp",
-        "projectPath": "C:\\Users\\HP Amanda\\Desktop\\Nova pasta\\Csharp\\StudyingCsharp\\Csharp.csproj",
+        "projectPath": "c:\\Users\\HP Amanda\\Desktop\\Nova pasta\\Csharp\\StudyingCsharp\\Csharp.csproj",
         "packagesPath": "C:\\Users\\HP Amanda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP Amanda\\Desktop\\Nova pasta\\Csharp\\StudyingCsharp\\obj\\",
+        "outputPath": "c:\\Users\\HP Amanda\\Desktop\\Nova pasta\\Csharp\\StudyingCsharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP Amanda\\AppData\\Roaming\\NuGet\\NuGet.Config",
